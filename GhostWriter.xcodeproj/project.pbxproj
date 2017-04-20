@@ -12,9 +12,12 @@
 		9DA3875A1EA4D45C008FDDE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA387591EA4D45C008FDDE3 /* ViewController.m */; };
 		9DA3875C1EA4D45C008FDDE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA3875B1EA4D45C008FDDE3 /* Assets.xcassets */; };
 		9DA3875F1EA4D45C008FDDE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA3875D1EA4D45C008FDDE3 /* Main.storyboard */; };
+		FDBB9195788A7557C6064602 /* Pods_GhostWriter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296B71EADBB37BA9E4AA182D /* Pods_GhostWriter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		296B71EADBB37BA9E4AA182D /* Pods_GhostWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GhostWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42DBA5B24612358126F53CB4 /* Pods-GhostWriter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GhostWriter.release.xcconfig"; path = "Pods/Target Support Files/Pods-GhostWriter/Pods-GhostWriter.release.xcconfig"; sourceTree = "<group>"; };
 		9DA3874F1EA4D45C008FDDE3 /* GhostWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhostWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA387521EA4D45C008FDDE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DA387531EA4D45C008FDDE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		9DA3875B1EA4D45C008FDDE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA3875E1EA4D45C008FDDE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA387601EA4D45C008FDDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA387661EA4D476008FDDE3 /* ghost.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = ghost.db; path = ../../../../gitwork/ghost/ghost074/content/data/ghost.db; sourceTree = "<group>"; };
+		C44335BD6AA1EA1668A6A6CC /* Pods-GhostWriter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GhostWriter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GhostWriter/Pods-GhostWriter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBB9195788A7557C6064602 /* Pods_GhostWriter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		067325E51864F9399A2A6664 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C44335BD6AA1EA1668A6A6CC /* Pods-GhostWriter.debug.xcconfig */,
+				42DBA5B24612358126F53CB4 /* Pods-GhostWriter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9DA387461EA4D45C008FDDE3 = {
 			isa = PBXGroup;
 			children = (
 				9DA387511EA4D45C008FDDE3 /* GhostWriter */,
 				9DA387501EA4D45C008FDDE3 /* Products */,
+				067325E51864F9399A2A6664 /* Pods */,
+				D68CA3322769B4103A1621B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,12 +75,13 @@
 			children = (
 				9DA387521EA4D45C008FDDE3 /* AppDelegate.h */,
 				9DA387531EA4D45C008FDDE3 /* AppDelegate.m */,
+				9DA3875B1EA4D45C008FDDE3 /* Assets.xcassets */,
+				9DA387661EA4D476008FDDE3 /* ghost.db */,
+				9DA387601EA4D45C008FDDE3 /* Info.plist */,
+				9DA3875D1EA4D45C008FDDE3 /* Main.storyboard */,
+				9DA387551EA4D45C008FDDE3 /* Supporting Files */,
 				9DA387581EA4D45C008FDDE3 /* ViewController.h */,
 				9DA387591EA4D45C008FDDE3 /* ViewController.m */,
-				9DA3875B1EA4D45C008FDDE3 /* Assets.xcassets */,
-				9DA3875D1EA4D45C008FDDE3 /* Main.storyboard */,
-				9DA387601EA4D45C008FDDE3 /* Info.plist */,
-				9DA387551EA4D45C008FDDE3 /* Supporting Files */,
 			);
 			path = GhostWriter;
 			sourceTree = "<group>";
@@ -76,6 +94,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D68CA3322769B4103A1621B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				296B71EADBB37BA9E4AA182D /* Pods_GhostWriter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DA387631EA4D45C008FDDE3 /* Build configuration list for PBXNativeTarget "GhostWriter" */;
 			buildPhases = (
+				AEBE1514A2002C2390472E00 /* [CP] Check Pods Manifest.lock */,
 				9DA3874B1EA4D45C008FDDE3 /* Sources */,
 				9DA3874C1EA4D45C008FDDE3 /* Frameworks */,
 				9DA3874D1EA4D45C008FDDE3 /* Resources */,
+				7937AEE2BB59B834157553E4 /* [CP] Embed Pods Frameworks */,
+				1E496232C35800340CD41932 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E496232C35800340CD41932 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GhostWriter/Pods-GhostWriter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7937AEE2BB59B834157553E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GhostWriter/Pods-GhostWriter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEBE1514A2002C2390472E00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DA3874B1EA4D45C008FDDE3 /* Sources */ = {
@@ -258,6 +335,7 @@
 		};
 		9DA387641EA4D45C008FDDE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44335BD6AA1EA1668A6A6CC /* Pods-GhostWriter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -271,6 +349,7 @@
 		};
 		9DA387651EA4D45C008FDDE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42DBA5B24612358126F53CB4 /* Pods-GhostWriter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -301,6 +380,7 @@
 				9DA387651EA4D45C008FDDE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@interface Model: NSObject;
+@end
 
 @interface ViewController : NSViewController
 
