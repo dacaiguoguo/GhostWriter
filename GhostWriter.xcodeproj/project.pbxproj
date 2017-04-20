@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1AEA5E1EA88141000B78BC /* curl.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9D1AEA5D1EA88141000B78BC /* curl.sh */; };
+		9D1AEA611EA881BF000B78BC /* BlogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1AEA601EA881BF000B78BC /* BlogModel.m */; };
 		9DA387541EA4D45C008FDDE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA387531EA4D45C008FDDE3 /* AppDelegate.m */; };
 		9DA387571EA4D45C008FDDE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA387561EA4D45C008FDDE3 /* main.m */; };
 		9DA3875A1EA4D45C008FDDE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA387591EA4D45C008FDDE3 /* ViewController.m */; };
@@ -18,6 +20,9 @@
 /* Begin PBXFileReference section */
 		296B71EADBB37BA9E4AA182D /* Pods_GhostWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GhostWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DBA5B24612358126F53CB4 /* Pods-GhostWriter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GhostWriter.release.xcconfig"; path = "Pods/Target Support Files/Pods-GhostWriter/Pods-GhostWriter.release.xcconfig"; sourceTree = "<group>"; };
+		9D1AEA5D1EA88141000B78BC /* curl.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = curl.sh; sourceTree = "<group>"; };
+		9D1AEA5F1EA881BF000B78BC /* BlogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogModel.h; sourceTree = "<group>"; };
+		9D1AEA601EA881BF000B78BC /* BlogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogModel.m; sourceTree = "<group>"; };
 		9DA3874F1EA4D45C008FDDE3 /* GhostWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhostWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA387521EA4D45C008FDDE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DA387531EA4D45C008FDDE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,7 +32,6 @@
 		9DA3875B1EA4D45C008FDDE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA3875E1EA4D45C008FDDE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA387601EA4D45C008FDDE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DA387661EA4D476008FDDE3 /* ghost.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = ghost.db; path = ../../../../gitwork/ghost/ghost074/content/data/ghost.db; sourceTree = "<group>"; };
 		C44335BD6AA1EA1668A6A6CC /* Pods-GhostWriter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GhostWriter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GhostWriter/Pods-GhostWriter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,13 +79,15 @@
 			children = (
 				9DA387521EA4D45C008FDDE3 /* AppDelegate.h */,
 				9DA387531EA4D45C008FDDE3 /* AppDelegate.m */,
+				9D1AEA5D1EA88141000B78BC /* curl.sh */,
 				9DA3875B1EA4D45C008FDDE3 /* Assets.xcassets */,
-				9DA387661EA4D476008FDDE3 /* ghost.db */,
 				9DA387601EA4D45C008FDDE3 /* Info.plist */,
 				9DA3875D1EA4D45C008FDDE3 /* Main.storyboard */,
 				9DA387551EA4D45C008FDDE3 /* Supporting Files */,
 				9DA387581EA4D45C008FDDE3 /* ViewController.h */,
 				9DA387591EA4D45C008FDDE3 /* ViewController.m */,
+				9D1AEA5F1EA881BF000B78BC /* BlogModel.h */,
+				9D1AEA601EA881BF000B78BC /* BlogModel.m */,
 			);
 			path = GhostWriter;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1AEA5E1EA88141000B78BC /* curl.sh in Resources */,
 				9DA3875C1EA4D45C008FDDE3 /* Assets.xcassets in Resources */,
 				9DA3875F1EA4D45C008FDDE3 /* Main.storyboard in Resources */,
 			);
@@ -227,6 +234,7 @@
 				9DA3875A1EA4D45C008FDDE3 /* ViewController.m in Sources */,
 				9DA387571EA4D45C008FDDE3 /* main.m in Sources */,
 				9DA387541EA4D45C008FDDE3 /* AppDelegate.m in Sources */,
+				9D1AEA611EA881BF000B78BC /* BlogModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
